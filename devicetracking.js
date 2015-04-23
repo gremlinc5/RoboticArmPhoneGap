@@ -1,3 +1,9 @@
+$(document).ready( function() {
+	$('#btnWatch').click(function () {
+		console.log('Binded');
+	});
+});
+
 $(document).bind('deviceready', function () {
 	var watchId = 0;
 	
