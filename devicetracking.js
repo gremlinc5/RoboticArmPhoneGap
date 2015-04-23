@@ -7,7 +7,9 @@ $(document).ready( function() {
 $(document).bind('deviceready', function () {
 	var watchId = 0;
 	
-	$('#btnWatch').bind('touchstart', function () {
+	alert('Device ready');
+	
+	$('#btnWatch').click(function () {
 		console.log('Binded');
 		if (watchId == 0) 
 		{
