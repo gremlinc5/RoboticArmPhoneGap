@@ -9,7 +9,7 @@ function onDeviceReady() {
 	watchId = 0;
 }	
 	
-$('#btnWatch').click(function () {
+function btnWatchClick() {
 	alert("Click");
 	if (watchId == 0) 
 	{
@@ -31,4 +31,4 @@ $('#btnWatch').click(function () {
 		$('#btnWatch').html('Start Watching');
 		watchId = 0;
 	}
-});
+}
