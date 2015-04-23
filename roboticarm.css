@@ -1,0 +1,27 @@
+/* Body full scale */
+body {
+	background-color: #99D9EA;
+	height: 100%;
+	margin: 0;
+	overflow: auto;
+}
+
+h1, h2, h3, a {
+	font-size: 1.3em;
+}
+
+.testo, ul, ol {
+	font-size: 1em;
+	text-align:justify;
+}
+
+.nota {
+	font-size: 0.8em;
+	text-align: right;
+}
+
+.citazione {
+	font-size: 1em;
+	text-align:justify;
+	margin: 20px 20px 20px 20px;
+}

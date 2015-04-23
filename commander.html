@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="user-scalable=1, initial-scale=1, width=device-width, height=device-height" />
+	
+	<title>Robotic Arm</title> 
+	<script type="text/javascript" src="phonegap.js"></script>
+	<link href="roboticarm.css" rel="stylesheet" type="text/css" />
+	
+	
+	<link rel="stylesheet" href="themes/RoboticArm.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="jquery 1.11.1/jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<script type="text/javascript" src="devicetracking.js"></script>
+</head>
+
+<body>
+	<div data-role="page" id="commandmenu" data-theme="a">
+
+		<div data-role="header" data-theme="a" data-position="fixed">
+			<h2>Robotic Arm</h2>
+			<a href="index.html" data-role="button" class="ui-btn-left" data-icon="home">Home</a>
+			<a href="#" data-rel="back" data-icon="back">Back</a>
+		</div><!-- /header -->
+
+		<div class="ui-content ui-page-theme-a" data-form="ui-page-theme-a" data-theme="a" role="main">
+		<div data-theme="a" data-form="ui-body-a" class="ui-body ui-body-a ui-corner-all">
+			<h2>Command Robotic Arm</h2>
+			
+			<p class="testo">Select what you need to do.</p>
+			
+		</div>
+		
+		<a href="#taratura" class="ui-btn ui-shadow ui-corner-all">Calibration</a>
+		
+		</div><!-- /content -->
+		
+		<div data-role="footer" data-theme="a">
+			<h2>Copyright MiChiLAB 2015</h2>
+		</div><!-- /footer -->
+	</div><!-- /page one -->
+
+	<div data-role="page" id="taratura" data-theme="a">
+
+		<div data-role="header" data-theme="a" data-position="fixed">
+			<h2>Robotic Arm</h2>
+			<a href="index.html" data-role="button" class="ui-btn-left" data-icon="home">Home</a>
+			<a href="#" data-rel="back" data-icon="back">Back</a>
+		</div><!-- /header -->
+
+		<div class="ui-content ui-page-theme-a" data-form="ui-page-theme-a" data-theme="a" role="main">
+		<div data-theme="a" data-form="ui-body-a" class="ui-body ui-body-a ui-corner-all">
+			<h2>Robotic Arm Calibration</h2>
+			
+			<p class="testo">Calibration of your Android device for Robotic Arm.</p>
+			
+			<label id="lblx" for="txtx">Acceleration X:</label>
+			<input name="txtx" id="txtx" type="number" value="0" />
+			<label id="lbly" for="txty">Acceleration Y:</label>
+			<input name="txty" id="txty" type="number" value="0" />
+			<label id="lblz" for="txtz">Acceleration Z:</label>
+			<input name="txtz" id="txtz" type="number" value="0" />
+			
+			<div id="btnWatch" class="ui-btn ui-corner-all" data-role="button" data-icon="star">
+				Start Accelerometer
+			</div>
+		</div>
+		
+		<div data-role="controlgroup" data-theme="a">
+			<a href="#commandmenu" data-direction="reverse" data-role="button" data-icon="carat-l">Back to command menu</a>
+		</div>
+		
+		</div><!-- /content -->
+		
+		<div data-role="footer" data-theme="a">
+			<h2>Copyright MiChiLAB 2015</h2>
+		</div><!-- /footer -->
+	</div><!-- /page one -->
+	
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="user-scalable=1, initial-scale=1, width=device-width, height=device-height" />
+	
+	<title>Robotic Arm</title> 
+	<script type="text/javascript" src="phonegap.js"></script>
+	<link href="roboticarm.css" rel="stylesheet" type="text/css" />
+	
+	
+	<link rel="stylesheet" href="themes/RoboticArm.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="jquery 1.11.1/jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+	<div data-role="page" data-theme="a">
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		// Reset Font Size
+		var originalFontSize = $('html').css('font-size');
+		$(".resetFont").click(function(){
+			$('html').css('font-size', originalFontSize);
+		});
+		// Increase Font Size
+		$(".increaseFont").click(function(){
+			var currentFontSize = $('html').css('font-size');
+			var currentFontSizeNum = parseFloat(currentFontSize, 10);
+			var newFontSize = currentFontSizeNum*1.2;
+			$('html').css('font-size', newFontSize);
+			return false;
+		});
+		// Decrease Font Size
+		$(".decreaseFont").click(function(){
+			var currentFontSize = $('html').css('font-size');
+			var currentFontSizeNum = parseFloat(currentFontSize, 10);
+			var newFontSize = currentFontSizeNum*0.8333;
+			$('html').css('font-size', newFontSize);
+			return false;
+		});
+	});
+	</script>
+
+		<div data-role="panel" id="mypanel" data-theme="a">
+			<a class="increaseFont" data-role="button" data-icon="plus">Zoom in</a>
+			<a class="decreaseFont" data-role="button" data-icon="minus">Zoom out</a>
+			<a class="resetFont" data-role="button" data-icon="delete">Reset</a>
+			<a href="#my-header" data-rel="close" data-role="button" data-icon="home">Close pannel</a>
+		</div><!-- /panel -->
+
+		<div data-role="header" data-theme="a" data-position="fixed">
+			<h2>Robotic Arm</h2>
+			<a href="#mypanel" data-role="button" class="ui-btn-left" data-icon="search">Zoom</a>
+		</div><!-- /header -->
+
+		<div class="ui-content ui-page-theme-a" data-form="ui-page-theme-a" data-theme="a" role="main">
+		<div data-theme="a" data-form="ui-body-a" class="ui-body ui-body-a ui-corner-all">
+			<h2>Introduction to Robotic Arm</h2>
+			
+			<p class="testo">This program permits to command a Robotic Arm.</p>
+			
+		</div>
+		
+		<div data-role="controlgroup" data-theme="a">
+			<a href="commander.html" data-role="button" data-icon="carat-r">Command Robotic Arm</a>
+		</div>
+		
+		</div><!-- /content -->
+		
+		<div data-role="footer" data-theme="a">
+			<h2>Copyright MiChiLAB 2015</h2>
+		</div><!-- /footer -->
+	</div><!-- /page one -->
+
+
+	
+</body>
+</html>
