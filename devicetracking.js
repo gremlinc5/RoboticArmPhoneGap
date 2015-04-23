@@ -1,16 +1,9 @@
-$(document).ready( function() {
-	$('#btnWatch').click(function () {
-		console.log('Binded');
-	});
-});
 
 $(document).bind('deviceready', function () {
 	var watchId = 0;
 	
-	alert('Device ready');
-	
 	$('#btnWatch').click(function () {
-		console.log('Binded');
+		alert('Binded');
 		if (watchId == 0) 
 		{
 			watchId = navigator.accelerometer.watchAcceleration( function(acceleration) {
@@ -32,4 +25,6 @@ $(document).bind('deviceready', function () {
 			watchId = 0;
 		}
 	});
+	
+	alert('Device ready');
 });
